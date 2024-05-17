@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.7",
+  "package": "net.jonuuh.texturedbarriers.mixins",
+  "refmap": "mixins.texturedbarriers.refmap.json",
+  "target": "@env(DEFAULT)",
+  "compatibilityLevel": "JAVA_8",
+  "overwrites": {
+    "conformVisibility": true
+  },
+  "client": [
+    "MixinBlockBarrier",
+    "MixinBlockStateMapper"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
