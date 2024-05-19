@@ -1,8 +1,8 @@
 [
     {
         "modid": "texturedbarriers",
-        "name": "Textured Barriers",
-        "description": "Uses mixins to force barriers to be rendered like glass blocks (can change their texture with a pack)",
+        "name": "TexturedBarriers",
+        "description": "Uses mixins to force barriers to be rendered (texture can be changed with a pack)",
         "version": "${version}",
         "mcversion": "${mcversion}",
         "url": "",

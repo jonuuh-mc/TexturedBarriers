@@ -7,9 +7,9 @@ import org.spongepowered.asm.mixin.Mixins;
 
 import java.util.Map;
 
-public class MixinLoader implements IFMLLoadingPlugin
+public class TexturedBarriersMixinLoader implements IFMLLoadingPlugin
 {
-    public MixinLoader()
+    public TexturedBarriersMixinLoader()
     {
         MixinBootstrap.init();
         Mixins.addConfiguration("mixins.texturedbarriers.json");

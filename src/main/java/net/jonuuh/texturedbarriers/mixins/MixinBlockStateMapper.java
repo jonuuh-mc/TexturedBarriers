@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import java.util.Set;
 
 @Mixin(BlockStateMapper.class)
-public class MixinBlockStateMapper
+public abstract class MixinBlockStateMapper
 {
     @Shadow
     private final Set<Block> setBuiltInBlocks = Sets.newIdentityHashSet();

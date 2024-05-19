@@ -1,5 +1,6 @@
 package net.jonuuh.texturedbarriers.mixins;
 
+import net.jonuuh.texturedbarriers.Config;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBarrier;
 import net.minecraft.block.material.Material;
@@ -26,14 +27,14 @@ public abstract class MixinBlockBarrier extends Block
     @Inject(method = "getRenderType", at = @At("HEAD"), cancellable = true)
     private void modifyGetRenderType(CallbackInfoReturnable<Integer> cir)
     {
-        cir.setReturnValue(3);
+        cir.setReturnValue(Config.enabled ? 3 : -1);
     }
 
     // Makes barriers render in the same layer as transparent blocks (like glass)
     @Override
     public EnumWorldBlockLayer getBlockLayer()
     {
-        return EnumWorldBlockLayer.CUTOUT;
+        return EnumWorldBlockLayer.TRANSLUCENT;
     }
 
     // Makes barrier sides not render through other barriers (copied from BlockBreakable -> glass superclass)

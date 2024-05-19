@@ -17,9 +17,9 @@ plugins {
 apply plugin: "net.minecraftforge.gradle.forge"
 apply plugin: 'org.spongepowered.mixin'
 
-version = "1.0.0"
+version = "1.0.2"
 group = "net.jonuuh.texturedbarriers"
-archivesBaseName = "texturedbarriers-1.8.9"
+archivesBaseName = "TexturedBarriers-1.8.9"
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -94,7 +94,7 @@ reobf {
  */
 jar {
     manifest.attributes(
-            "FMLCorePlugin": "net.jonuuh.texturedbarriers.mixins.MixinLoader",
+            "FMLCorePlugin": "net.jonuuh.texturedbarriers.mixins.TexturedBarriersMixinLoader",
             "ForceLoadAsMod": true,
             "TweakOrder": 0,
             "ModSide": "CLIENT",
